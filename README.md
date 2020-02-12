@@ -13,5 +13,10 @@
     - ``` git show abc123 ``` :(Will compare with the previous commit and display the changes.)
 5. Assuming that you are currently within a Git repository, write the command (or commands) that will display the ID and commit message for the 3 most recent commits.
     - ``` git log --oneline -3``` :(Here log tells the histroy of commit ,oneline tells that show only commit id and message and 3 represent the most 3 recent commits.)
+6. Assuming that you are currently within a Git repository, write the command (or commands) that will check to see if the remote repository contains any new commits.
+    -  This can be achieved by two commands.
+        -  ``` git fetch ``` To check whether local is aware of all the commits made to remote repositary.
+        - ``` git status``` So local and remote are not sync , we can get to know that which is running behind.
+        - In our problem it will show  remote is ahead of n commits. So now we will know that this are the new commit and we can pull them.
 
 
